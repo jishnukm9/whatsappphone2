@@ -1,9 +1,11 @@
 FROM python:3.10
 
-# Install system dependencies including Tesseract
+# Install system dependencies including Tesseract and OpenCV requirements
 RUN apt-get update && apt-get install -y \
     tesseract-ocr \
     libtesseract-dev \
+    libgl1 \
+    libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
