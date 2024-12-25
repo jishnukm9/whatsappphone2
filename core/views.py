@@ -7,7 +7,7 @@ from django.conf import settings
 import os
 
 # Add at the top of your file if using Windows
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+# pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 def home(request):
     return render(request, 'core/home.html')
